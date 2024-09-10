@@ -4,71 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Page Not Found</title>
+    <title>404 Not Found</title>
     <style>
         body {
+            background-color: white;
+            color: black;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            width: 50%;
+            margin: 20px auto;
         }
 
-        main {
-            padding: 50px;
-        }
+        /* Dark theme */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #181818;
+                color: #f0f0f0;
+            }
 
-        h1 {
-            font-size: 48px;
-            color: #333;
-        }
-
-        p {
-            font-size: 20px;
-            color: #666;
-        }
-
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            hr {
+                border-top: 1px solid #444;
+            }
         }
     </style>
 </head>
 <body>
-
-    <header>
-        404 - Page Not Found
-    </header>
-
-    <main>
-        <h1>Oops!</h1>
-        <p>The page you're looking for doesn't exist.</p>
-        <p>Go back to the <a href="/">homepage</a>.</p>
-    </main>
-
-    <footer>
-        &copy; 2024 My GitHub Page. All rights reserved.
-    </footer>
-
+    <center><h1>404 Not Found</h1></center>
+    <hr>
+    <center>nginx/1.0.11</center>
 </body>
 </html>
